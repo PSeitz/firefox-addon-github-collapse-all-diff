@@ -10,7 +10,10 @@
     "content_scripts": [
         {
             "matches": [
-                "*://*.github.com/*/*/commit/*"
+                "*://*.github.com/*/*/commit/*",
+                "*://*.github.com/*/*/pull/*",
+                "*://github*/*/*/commit/*",
+                "*://github*/*/*/pull/*"
             ],
             "js": [
                 "collapse-all-diffs-button.js"
